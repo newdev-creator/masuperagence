@@ -1,0 +1,10 @@
+#services:
+#  recaptcha.type:
+#    class: 'Grafikart\RecaptchaBundle\Type\RecaptchaSubmitType'
+#    tags: ['form.type']
+#    arguments:
+#      $key: '6LeIohoUAAAAAOtXJ1_WbAwVoPiALqCg3q2JKiKX'
+
+recaptcha:
+    key: '%env(GOOGLE_RECAPTCHA_KEY)%'
+    secret: '%env(GOOGLE_RECAPTCHA_SECRET)%'

@@ -1,0 +1,27 @@
+# Documentation on how to configure the bundle can be found at: https://symfony.com/doc/current/bundles/LiipImagineBundle/basic-usage.html
+# app/config/config.yml
+
+liip_imagine :
+    # configure resolvers
+    resolvers:
+
+        # setup the default resolver
+        default:
+
+            # use the default web path
+            web_path: ~
+    filter_sets:
+        thumb:
+            quality: 75
+            filters:
+                thumbnail:
+                    size: [360, 230]
+                    mode: outbound
+        medium:
+            quality: 75
+            filters:
+                thumbnail:
+                    size: [ 800, 530 ]
+                    mode: outbound
+        cache: ~
+
